@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>COSIGO Value — 1 COSIGO = 1 mg Silver | Value vs Price</title>
+
+  <meta name="description"
+    content="COSIGO value framework. 1 COSIGO corresponds to 1 milligram of physical silver. Canonical reference for value versus price, continuity-based economic measurement, and non-fiat value design." />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="COSIGO Value — 1 COSIGO = 1 mg Silver" />
+  <meta property="og:description"
+    content="Canonical reference for the COSIGO value system. Value is measured independently from price and anchored in physical silver." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="COSIGO" />
+  <meta property="og:url" content="https://value.cosigo.io/" />
+
+  <link rel="canonical" href="https://value.cosigo.io/" />
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/shared/style.css?v=20260628-004911">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="https://cosigo.io/" aria-label="COSIGO home">
+        <img src="/shared/assets/cosigo_master/cosigo_master_64.png" alt="COSIGO logo" />
+        <span class="name">Home</span>
+      </a>
+
+      <nav aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="https://token.cosigo.io">Token</a></li>
+          <li><a href="https://whitepaper.cosigo.io">Whitepaper</a></li>
+          <li><a href="https://docs.cosigo.io">Docs</a></li>
+          <li><a href="https://satellites.cosigo.io">Satellites</a></li>
+          <li><a href="https://stream.cosigo.io">Live</a></li>
+          <li><a href="https://coins.cosigo.io">Store</a></li>
+          <li><a class="cta" href="https://contact.cosigo.io">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">COSIGO&trade; Value</h1>
+        <div class="sub">
+          COSIGO defines value independently from price. In this framework,
+          <span class="pill">1 COSIGO = 1 mg silver</span>.
+          Market quotation can move. Unit logic remains measurable.
+        </div>
+      </div>
+      <div class="badge">Value page • Interactive reference</div>
+    </section>
+
+    <section class="card" aria-labelledby="value-intro-title" style="margin-top:14px;">
+      <div class="bar">
+        <div class="g"></div><div class="s"></div><div class="c"></div>
+      </div>
+
+      <h2 id="value-intro-title">Continuity-Based Economic Framework</h2>
+
+      <p>
+        COSIGO defines value independently from price.
+        It establishes a continuity-based system of economic measurement
+        anchored in physical silver rather than fiat quotation or speculative fluctuation.
+      </p>
+
+      <p>
+        <strong>1 COSIGO corresponds to 1 milligram of physical silver.</strong>
+        This relationship provides a stable unit of reference for measurement,
+        accounting, and value continuity across time.
+      </p>
+
+      <p class="anchor-link-mini">
+        Practical value anchors, including the standardized fresh egg reference,
+        are documented in the anchor clarification below and in
+        <a href="https://deposits.cosigo.io/" target="_blank" rel="noopener">deposit records</a>.
+      </p>
+
+      <p>
+        This namespace serves as the canonical reference for COSIGO value logic,
+        silver anchor, measurement principles, and continuity-based economic design.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="spot-ref-title" style="margin-top:14px;">
+      <div class="hd">
+        <div class="title" id="spot-ref-title">Live silver and currency reference</div>
+        <div class="hint">→ set sliders below to explore scenarios</div>
+      </div>
+      <div class="bd" style="padding:0;">
+        <div class="crypto-ticker">
+          <iframe src="/assets/silver-ticker.html" loading="lazy" title="Live silver and currency ticker"></iframe>
+        </div>
+      </div>
+      <div class="bd" style="padding-top:12px;">
+        <p class="value-live-note">
+          Market quotation is shown above. COSIGO measurement is calculated below.
+        </p>
+      </div>
+    </section>
+
+    <div class="grid" role="region" aria-label="Silver reference converter">
+      <section class="card" aria-labelledby="inputs-title">
+        <div class="hd">
+          <div class="title" id="inputs-title">Interactive converter</div>
+          <div class="hint">Use grams for readability. Keep mg for precision.</div>
+        </div>
+        <div class="bd">
+
+          <div class="row">
+            <div>
+              <label for="currency">Selected currency</label>
+              <div class="meta">FX reference loads automatically. Silver spot remains manually adjustable.</div>
+            </div>
+            <div>
+              <select id="currency">
+                <option value="USD">USD — US dollar</option>
+                <option value="MXN">MXN — Mexican peso</option>
+                <option value="EUR">EUR — euro</option>
+                <option value="JPY">JPY — Japanese yen</option>
+                <option value="CNY">CNY — Chinese yuan</option>
+                <option value="CLP">CLP — Chilean peso</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="spot">Silver spot price (USD / troy oz)</label>
+              <div class="meta">Scenario range from <span class="pill">40</span> to <span class="pill">400</span> USD per ounce.</div>
+            </div>
+            <div class="val" id="spotVal">$100.00</div>
+          </div>
+          <input id="spot" type="range" min="40" max="400" step="0.25" value="100" />
+
+          <div class="row">
+            <div>
+              <label for="fx">Exchange rate (<span id="fxLabel">MXN per USD</span>)</label>
+              <div class="meta">This auto-loads from a live FX reference, then remains manually adjustable.</div>
+            </div>
+            <div class="val" id="fxVal">18.00</div>
+          </div>
+          <input id="fx" type="range" min="1" max="1400" step="0.01" value="18" />
+
+          <div class="row">
+            <div>
+              <label for="grams">Silver quantity (grams)</label>
+              <div class="meta">Primary display uses grams. COSIGO math remains exact: <span class="pill">1 unit = 1 mg</span>.</div>
+            </div>
+            <div class="val" id="gramsVal">10 g</div>
+          </div>
+          <input id="grams" type="range" min="1" max="1000" step="1" value="10" />
+
+          <div class="toggle">
+            <button id="presetUSD" type="button">USD</button>
+            <button id="presetMXN" class="on" type="button">MXN</button>
+            <button id="presetEUR" type="button">EUR</button>
+            <button id="presetJPY" type="button">JPY</button>
+            <button id="presetCNY" type="button">CNY</button>
+            <button id="presetCLP" type="button">CLP</button>
+            <button id="btnReset" type="button">reset</button>
+          </div>
+
+          <div class="ticker" aria-label="Currency silver ticker">
+            <div class="ticker-track" id="tickerTrack"></div>
+          </div>
+
+          <div class="meta mono" id="liveStatus">Reference: loading FX…</div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="results-title">
+        <div class="hd">
+          <div class="title" id="results-title">Results</div>
+          <div class="hint"><span class="pill">1 token = 1 mg silver reference</span></div>
+        </div>
+        <div class="bd">
+
+          <div class="kpi" role="list">
+            <div class="k" role="listitem">
+              <div class="l">Silver per gram</div>
+              <div class="v" id="gramLocal">45.00 MXN/g</div>
+              <div class="s" id="gramDetail">$100.00/oz ÷ 31.1035 × 18.00</div>
+            </div>
+
+            <div class="k" role="listitem">
+              <div class="l">Silver per mg / 1 COSIGO unit</div>
+              <div class="v" id="mgLocal">0.0450 MXN</div>
+              <div class="s" id="mgDetail">1 g ÷ 1000 = 1 mg = 1 unit</div>
+            </div>
+
+            <div class="k" role="listitem">
+              <div class="l">Selected grams value</div>
+              <div class="v" id="qtyLocal">450.00 MXN</div>
+              <div class="s" id="qtyDetail">10 g × 45.00 MXN/g</div>
+            </div>
+
+            <div class="k" role="listitem">
+              <div class="l">Equivalent COSIGO units</div>
+              <div class="v" id="tokenQty">10,000 units</div>
+              <div class="s" id="tokenDetail">10 g × 1000 mg/g</div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px;">
+            <a href="https://coins.cosigo.io" class="cta-buy">Acquire COSIGO units</a>
+          </div>
+
+          <div class="banner">
+            <p class="big" id="headline">
+              Public display is shown in grams for readability. Unit accounting remains exact in milligrams.
+            </p>
+
+            <div class="small" id="summary">
+              At the current inputs, <span class="mono">10 grams</span> equals
+              <span class="mono">10,000 COSIGO units</span> and translates into selected fiat using the local silver-per-gram reference.
+            </div>
+
+            <div class="math mono" id="mathLine">
+              USD/g = spot ÷ 31.1035 → local/g = USD/g × FX → local/mg = local/g ÷ 1000
+            </div>
+
+            <div class="warn">
+              COSIGO units are referenced in milligrams for precision, but gram display is clearer for humans. The math remains identical.
+            </div>
+
+            <div class="foot">
+              This is an educational reference converter. It is not a live market feed and not financial advice.
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="bar"><div class="g"></div><div class="s"></div><div class="c"></div></div>
+        <h2>Value vs Price</h2>
+        <p>COSIGO separates <strong>value</strong> from <strong>price</strong>.</p>
+        <p>
+          <strong>Value</strong> is the persistent economic measure anchored in physical reality.
+          <br>
+          <strong>Price</strong> is the temporary market expression quoted in fiat or exchange terms.
+        </p>
+        <p>COSIGO measures value. Markets generate price.</p>
+      </div>
+
+      <div class="card">
+        <div class="bar"><div class="g"></div><div class="s"></div><div class="c"></div></div>
+        <h2>Measurement Principle</h2>
+        <p>
+          The COSIGO framework treats value as a measurable quantity rather than a floating narrative.
+        </p>
+        <ul>
+          <li>Unit: COSIGO</li>
+          <li>Reference: physical silver</li>
+          <li>Granularity: 1 milligram</li>
+          <li>Purpose: continuity-based economic measurement</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="bar"><div class="g"></div><div class="s"></div><div class="c"></div></div>
+        <h2>Scope</h2>
+        <ul>
+          <li>Value versus price separation</li>
+          <li>Continuity-based valuation</li>
+          <li>Physical silver anchoring</li>
+          <li>Non-fiat economic measurement</li>
+          <li>1 COSIGO = 1 mg silver</li>
+          <li>Unit-of-value design</li>
+          <li>Stability and persistence modeling</li>
+          <li>Value transmission systems</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="bar"><div class="g"></div><div class="s"></div><div class="c"></div></div>
+        <h2>Silver Anchor</h2>
+        <p>
+          Physical silver is used as the continuity anchor because it is durable,
+          divisible, scarce, globally recognized, and historically monetary.
+        </p>
+        <p>
+          In the COSIGO system, silver is not merely a trading commodity.
+          It is the physical measurement basis that stabilizes the unit.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="bar"><div class="g"></div><div class="s"></div><div class="c"></div></div>
+        <h2>Anchor Clarification</h2>
+        <p>
+          During early development of the COSIGO system, preliminary references suggested a value near
+          <strong>21 mg of silver per fresh egg</strong>. This estimate was derived from a limited sampling of historical data.
+        </p>
+        <p>
+          As research expanded across broader timeframes and modern market observations, the long-term
+          average relationship between eggs and silver was found to be closer to
+          <strong>~88 mg of silver per egg</strong>.
+        </p>
+        <p>To provide stability, clarity, and simple accounting within the system, COSIGO standardized the anchor at:</p>
+        <p><strong>1 fresh egg = 100 COSIGO</strong></p>
+        <p>
+          This rounded value provides a practical reference point while remaining consistent with
+          historical purchasing power relationships between silver and basic food staples.
+        </p>
+        <p class="anchor-note">
+          As additional data improves precision, COSIGO anchors may be refined while maintaining
+          continuity with real-world goods and human labor.
+        </p>
+        <p>
+          <a href="https://deposits.cosigo.io/" target="_blank" rel="noopener">
+            View deposit records and historical anchor context →
+          </a>
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="bar"><div class="g"></div><div class="s"></div><div class="c"></div></div>
+        <h2>Status</h2>
+        <p>This namespace is under active construction.</p>
+        <p>Infrastructure, definitions, and supporting documentation are being established.</p>
+        <p>Content will be published progressively, including reference models, economic logic, and implementation details.</p>
+      </div>
+    </div>
+
+    <footer class="site-footer-basic">
+      <div class="footer-row">
+        <div class="footer-info">
+          COSIGO&trade; Educational tool. Not financial advice.<br>
+          Structure over speculation · Value over price ·<br>
+          Continuity over volatility · Architecture over hype.<br>
+          &copy; <span id="year"></span> COSIGO. All rights reserved.<br>
+          COSIGO&trade; is a trademark of Wendall Gregory Wilson.
+        </div>
+
+        <a href="https://github.com/cosigo" aria-label="COSIGO GitHub organization"
+          title="COSIGO open-source repositories" class="github-link">
+          <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.65 0 8.15c0 3.6 2.29 6.65 5.47 7.73.4.08.55-.18.55-.39
+            0-.19-.01-.82-.01-1.49-2.01.45-2.53-.5-2.69-.96-.09-.23-.48-.96-.82-1.15
+            -.28-.15-.68-.52-.01-.53.63-.01 1.08.6 1.23.85.72 1.23 1.87.88
+            2.33.67.07-.53.28-.88.51-1.08-1.78-.2-3.64-.91-3.64-4.05
+            0-.89.31-1.62.82-2.19-.08-.2-.36-1.02.08-2.12 0 0 .67-.22
+            2.2.84.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27
+            1.53-1.06 2.2-.84 2.2-.84.44 1.1.16 1.92.08 2.12.51.57
+            .82 1.3.82 2.19 0 3.15-1.87 3.85-3.65 4.05.29.26.54.77
+            .54 1.56 0 1.13-.01 2.04-.01 2.32 0 .21.15.47.55.39
+            C13.71 14.8 16 11.75 16 8.15 16 3.65 12.42 0 8 0z" />
+          </svg>
+          <span class="visually-hidden">GitHub</span>
+        </a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    (() => {
+      const btn = document.querySelector(".nav-toggle");
+      const list = document.querySelector(".nav-links");
+      if (!btn || !list) return;
+
+      btn.addEventListener("click", () => {
+        const open = list.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!list.classList.contains("is-open")) return;
+        if (btn.contains(e.target) || list.contains(e.target)) return;
+        list.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+      });
+    })();
+
+    const G_PER_OZ = 31.1035;
+    const MG_PER_G = 1000;
+
+    const presets = {
+      USD: { fx: 1.00, min: 1, max: 5, step: 0.01, label: 'USD per USD', symbol: '$' },
+      MXN: { fx: 18.00, min: 5, max: 40, step: 0.01, label: 'MXN per USD', symbol: '$' },
+      EUR: { fx: 0.92, min: 0.50, max: 1.50, step: 0.001, label: 'EUR per USD', symbol: '€' },
+      JPY: { fx: 150.00, min: 80, max: 220, step: 0.1, label: 'JPY per USD', symbol: '¥' },
+      CNY: { fx: 7.20, min: 4, max: 12, step: 0.01, label: 'CNY per USD', symbol: '¥' },
+      CLP: { fx: 950.00, min: 500, max: 1400, step: 1, label: 'CLP per USD', symbol: '$' }
+    };
+
+    let liveRates = Object.fromEntries(Object.entries(presets).map(([k, v]) => [k, v.fx]));
+
+    const el = (id) => document.getElementById(id);
+
+    const currency = el('currency');
+    const spot = el('spot');
+    const fx = el('fx');
+    const grams = el('grams');
+    const liveStatus = el('liveStatus');
+
+    const spotVal = el('spotVal');
+    const fxVal = el('fxVal');
+    const gramsVal = el('gramsVal');
+    const fxLabel = el('fxLabel');
+
+    const gramLocal = el('gramLocal');
+    const mgLocal = el('mgLocal');
+    const qtyLocal = el('qtyLocal');
+    const tokenQty = el('tokenQty');
+
+    const gramDetail = el('gramDetail');
+    const mgDetail = el('mgDetail');
+    const qtyDetail = el('qtyDetail');
+    const tokenDetail = el('tokenDetail');
+
+    const headline = el('headline');
+    const summary = el('summary');
+    const mathLine = el('mathLine');
+
+    const presetButtons = {
+      USD: el('presetUSD'),
+      MXN: el('presetMXN'),
+      EUR: el('presetEUR'),
+      JPY: el('presetJPY'),
+      CNY: el('presetCNY'),
+      CLP: el('presetCLP')
+    };
+
+    const btnReset = el('btnReset');
+
+    function formatNumber(num, digits = 2) {
+      return Number(num).toLocaleString('en-US', {
+        minimumFractionDigits: digits,
+        maximumFractionDigits: digits
+      });
+    }
+
+    function formatCompact(num, digits = 4) {
+      return Number(num).toLocaleString('en-US', {
+        minimumFractionDigits: digits,
+        maximumFractionDigits: digits
+      });
+    }
+
+    function currencyPrefix(code) {
+      return presets[code].symbol;
+    }
+
+    function buildTicker(spotNum) {
+      const track = el('tickerTrack');
+      const selected = currency.value;
+      const order = ['USD', 'MXN', 'EUR', 'JPY', 'CNY', 'CLP'];
+
+      track.innerHTML = order.map(code => {
+        const fxRate = liveRates[code] ?? presets[code].fx;
+        const usdPerGram = spotNum / G_PER_OZ;
+        const localPerGram = usdPerGram * fxRate;
+        const fxDigits = (code === 'JPY' || code === 'CLP') ? 1 : 2;
+        const gramDigits = localPerGram >= 1000 ? 0 : 2;
+
+        return `
+          <div class="ticker-item${code === selected ? ' on' : ''}">
+            <span class="ticker-code">${code}</span>
+            <span>${formatNumber(fxRate, fxDigits)}</span>
+            <span class="ticker-sep">|</span>
+            <span>${formatNumber(localPerGram, gramDigits)}/g</span>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function setCurrency(code) {
+      currency.value = code;
+      const p = presets[code];
+
+      fx.min = p.min;
+      fx.max = p.max;
+      fx.step = p.step;
+      fx.value = liveRates[code] ?? p.fx;
+      fxLabel.textContent = p.label;
+
+      Object.keys(presetButtons).forEach(k => {
+        presetButtons[k].classList.toggle('on', k === code);
+      });
+
+      update();
+    }
+
+    function resetAll() {
+      spot.value = 100;
+      grams.value = 10;
+      setCurrency('MXN');
+    }
+
+    function update() {
+      const code = currency.value;
+      const spotNum = Number(spot.value);
+      const fxNum = Number(fx.value);
+      const gramsNum = Number(grams.value);
+
+      const usdPerGram = spotNum / G_PER_OZ;
+      const localPerGram = usdPerGram * fxNum;
+      const localPerMg = localPerGram / MG_PER_G;
+      const tokenCount = gramsNum * MG_PER_G;
+      const localQty = gramsNum * localPerGram;
+      const prefix = currencyPrefix(code);
+
+      buildTicker(spotNum);
+
+      spotVal.textContent = '$' + formatNumber(spotNum, 2);
+      fxVal.textContent = formatNumber(fxNum, code === 'JPY' || code === 'CLP' ? 1 : 2);
+      gramsVal.textContent = formatNumber(gramsNum, 0) + ' g';
+
+      gramLocal.textContent = `${formatNumber(localPerGram, 2)} ${code}/g`;
+      mgLocal.textContent = `${formatCompact(localPerMg, 4)} ${code}`;
+      qtyLocal.textContent = `${formatNumber(localQty, 2)} ${code}`;
+      tokenQty.textContent = `${Number(tokenCount).toLocaleString('en-US')} units`;
+
+      gramDetail.textContent = `$${formatNumber(spotNum, 2)}/oz ÷ ${G_PER_OZ.toFixed(4)} × ${formatNumber(fxNum, code === 'JPY' || code === 'CLP' ? 1 : 2)}`;
+      mgDetail.textContent = `1 g ÷ 1000 = 1 mg = 1 COSIGO unit`;
+      qtyDetail.textContent = `${formatNumber(gramsNum, 0)} g × ${formatNumber(localPerGram, 2)} ${code}/g`;
+      tokenDetail.textContent = `${formatNumber(gramsNum, 0)} g × 1000 mg/g`;
+
+      headline.textContent =
+        `At ${prefix}${formatNumber(spotNum, 2)} silver per ounce, one gram references ${formatNumber(localPerGram, 2)} ${code}.`;
+
+      summary.innerHTML =
+        `${formatNumber(gramsNum, 0)} grams = <span class="mono">${Number(tokenCount).toLocaleString('en-US')} COSIGO units</span> = <span class="mono">${formatNumber(localQty, 2)} ${code}</span> at the selected silver and FX inputs.`;
+
+      mathLine.textContent =
+        `USD/g = ${formatNumber(spotNum, 2)} ÷ ${G_PER_OZ.toFixed(4)} = ${formatCompact(usdPerGram, 4)} → ${code}/g = ${formatCompact(usdPerGram, 4)} × ${formatNumber(fxNum, code === 'JPY' || code === 'CLP' ? 1 : 2)} = ${formatCompact(localPerGram, 4)} → ${code}/mg = ${formatCompact(localPerGram, 4)} ÷ 1000 = ${formatCompact(localPerMg, 6)}`;
+    }
+
+    async function loadLiveReference() {
+      try {
+        const fxRes = await fetch('https://api.frankfurter.dev/v2/rates?base=USD&quotes=MXN,EUR,JPY,CNY,CLP');
+        const fxJson = await fxRes.json();
+
+        if (!Array.isArray(fxJson)) throw new Error('Bad FX response');
+
+        const rates = {};
+        fxJson.forEach(row => {
+          if (row && row.quote && typeof row.rate === 'number') {
+            rates[row.quote] = row.rate;
+          }
+        });
+
+        liveRates = {
+          USD: 1,
+          MXN: Number(rates.MXN ?? presets.MXN.fx),
+          EUR: Number(rates.EUR ?? presets.EUR.fx),
+          JPY: Number(rates.JPY ?? presets.JPY.fx),
+          CNY: Number(rates.CNY ?? presets.CNY.fx),
+          CLP: Number(rates.CLP ?? presets.CLP.fx)
+        };
+
+        const selected = currency.value;
+        if (liveRates[selected]) {
+          fx.value = liveRates[selected];
+        }
+
+        const asOf = fxJson[0]?.date ? ` (${fxJson[0].date})` : '';
+        liveStatus.textContent = 'Reference: live FX loaded' + asOf;
+        update();
+      } catch (err) {
+        console.warn('Live FX load failed, using presets.', err);
+        liveStatus.textContent = 'Reference: preset FX values';
+        update();
+      }
+    }
+
+    currency.addEventListener('change', () => setCurrency(currency.value));
+    [spot, fx, grams].forEach(inp => inp.addEventListener('input', update));
+
+    Object.keys(presetButtons).forEach(code => {
+      presetButtons[code].addEventListener('click', () => setCurrency(code));
+    });
+
+    btnReset.addEventListener('click', resetAll);
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    resetAll();
+    loadLiveReference();
+  </script>
+</body>
+</html>

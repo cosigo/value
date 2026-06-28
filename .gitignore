@@ -1,0 +1,6 @@
+# local edit backups
+backups/
+
+# logs / temp
+*.log
+.DS_Store
